@@ -1,0 +1,5 @@
+net "clk50" loc = "B8";
+net "dirg" loc = "C12";
+net "dird" loc = "A9";
+net "en_g" loc = "A13";
+net "en_d" loc = "B9";
