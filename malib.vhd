@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 
-PACKAGE malib IS
+PACKAGE malib IS --package : paquet genre librarie
 COMPONENT dds IS PORT(
 	--entrées
 	clk50 : IN std_logic;
@@ -15,6 +15,7 @@ END COMPONENT;
 COMPONENT cpt_mli IS PORT(
 	--entrées
 	clk400k : in std_logic;
+	--sortie
 	Q : out std_logic_vector(7 downto 0));
 END COMPONENT;
 
@@ -66,7 +67,6 @@ END ENTITY;
 
 ARCHITECTURE cpt OF cpt_mli IS
 signal N : std_logic_vector(7 downto 0);
-
 BEGIN
 	process (clk400k) begin
 		if rising_edge(clk400k) then
@@ -87,7 +87,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
-
 ENTITY dds IS PORT(
 	--entrées
 	clk50 : IN std_logic;
@@ -96,8 +95,7 @@ ENTITY dds IS PORT(
 	Q : OUT std_logic);
 END dds;
 
-ARCHITECTURE DDS OF dds is
-
+ARCHITECTURE dds_work OF dds is
 signal c : std_logic_vector(31 downto 0);
 signal Q32 : std_logic_vector(31 downto 0);
 signal toto : std_logic;
@@ -116,4 +114,4 @@ BEGIN
 		end if;
 	end process;
 	Q <= toto;
-END DDS;
+END dds_work;

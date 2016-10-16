@@ -15,3 +15,7 @@ net "interG_mli(0)" loc = "G3";
 net "interG_mli(1)" loc = "F3";
 net "interG_mli(2)" loc = "E2";
 net "interG_mli(3)" loc = "N3";
+
+#boutons pour direction
+net "boutonD" loc = "C11";
+net "boutonG" loc = "A7";
