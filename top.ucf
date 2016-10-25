@@ -19,3 +19,9 @@ net "interG_mli(3)" loc = "N3";
 #boutons pour direction
 net "boutonD" loc = "C11";
 net "boutonG" loc = "A7";
+
+#sensorA et B
+net "sensorA" loc = "C13";
+net "sensorB" loc = "D12";
+net "sortieSensorA" loc = "B7";
+net "sortieSensorB" loc = "B6";
