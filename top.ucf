@@ -1,0 +1,35 @@
+net "clk" loc = "B8";
+net "rst" loc = "N3";
+
+#led
+#net "rd_data<0>" loc = "M5";
+#net "rd_data<1>" loc = "M11";
+#net "rd_data<2>" loc = "P7";
+#net "rd_data<3>" loc = "P6";
+#net "rd_data<4>" loc = "N5";
+#net "rd_data<5>" loc = "N4";
+#net "rd_data<6>" loc = "P4";
+#net "rd_data<7>" loc = "G1";
+
+net "dir_g" loc = "C12";
+net "dir_d" loc = "A9";
+net "en_g" loc = "A13";
+net "en_d" loc = "B9";
+
+#sensorA et B
+net "sensorAD" loc = "C13";
+net "sensorBD" loc = "D12";
+net "sensorAG" loc = "A10";
+net "sensorBG" loc = "C9";
+
+
+
+inst prgmem/pe_0 loc = ramb16_x1y4;
+inst prgmem/pe_1 loc = ramb16_x1y1;
+inst prgmem/pe_2 loc = ramb16_x1y2;
+inst prgmem/pe_3 loc = ramb16_x1y3;
+
+
+
+			
+			

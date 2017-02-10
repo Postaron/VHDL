@@ -1,0 +1,9 @@
+ADDRESS_SPACE prgmem RAMB16 [0x00000000:0x00001FFF]
+    BUS_BLOCK
+	prgmem/pe_1 RAMB16 [3:0] [0:4095] PLACED = X1Y1;
+        prgmem/pe_0 RAMB16 [7:4] [0:4095] PLACED = X1Y4;
+        prgmem/pe_3 RAMB16 [11:8] [0:4095] PLACED = X1Y3;
+        prgmem/pe_2 RAMB16 [15:12] [0:4095] PLACED = X1Y2;
+        
+    END_BUS_BLOCK;
+END_ADDRESS_SPACE;
